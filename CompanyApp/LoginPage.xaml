@@ -1,0 +1,19 @@
+﻿<Window x:Class="CompanyApp.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login Bedrijf" Height="316" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="20">
+        <TextBlock Text="Login Bedrijf" FontWeight="Bold" FontSize="20" Margin="0,0,0,20" TextAlignment="Center"/>
+
+        <TextBlock Text="Login:" />
+        <TextBox x:Name="LoginBox" Margin="0,5"/>
+
+        <TextBlock Text="Wachtwoord:" />
+        <PasswordBox x:Name="PasswordBox" Margin="0,5"/>
+
+        <TextBlock x:Name="MessageBlock" Foreground="Red" Margin="0,5"/>
+
+        <Button Content="Inloggen" Click="LoginButton_Click" Height="30"/>
+    </StackPanel>
+</Window>

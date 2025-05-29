@@ -1,0 +1,30 @@
+﻿<Page x:Class="CompanyApp.Pages.ReportsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="ReportsPage">
+
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <TextBlock Text="Mijn Jaarrapporten" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+            <!-- Affichage dynamique des rapports -->
+            <StackPanel x:Name="ReportsPanel" />
+
+            <!-- Formulaire d'ajout -->
+            <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="0,30,0,0">
+                <StackPanel>
+                    <TextBlock Text="Nieuw rapport toevoegen:" FontWeight="Bold"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Label Content="Jaar:" Width="50"/>
+                        <TextBox x:Name="NewYearBox" Width="100" Margin="5"/>
+                        <Label Content="Werkplekken:" Width="100"/>
+                        <TextBox x:Name="NewWorkplacesBox" Width="100" Margin="5"/>
+                        <Label Content="Schoonmaak/week:" Width="120"/>
+                        <TextBox x:Name="NewCleaningBox" Width="100" Margin="5"/>
+                        <Button Content="Toevoegen" Click="AddReport_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

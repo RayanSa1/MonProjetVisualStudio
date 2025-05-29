@@ -1,0 +1,11 @@
+﻿<Page x:Class="CompanyApp.Pages.CompanyHomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="CompanyHomePage">
+    <Grid Background="White">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" Width="400">
+            <TextBlock x:Name="WelcomeText" FontSize="24" TextAlignment="Center" Margin="10"/>
+            <Image x:Name="LogoImage" Height="150" Margin="10" Stretch="Uniform"/>
+        </StackPanel>
+    </Grid>
+</Page>
